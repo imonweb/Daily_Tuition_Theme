@@ -1,0 +1,67 @@
+header.header-area .nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header.header-area .nav .toggle-button {
+  margin-left: auto;
+  display: none;
+  border: 1p solid var(--light);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+header.header-area .nav .toggle-button:hover {
+  color: var(--gray);
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  padding: 0 1vw;
+}
+
+.navbar-nav .nav-link .link:hover {
+  color: var(--primary-color);
+}
+
+.nav .nav-brand {
+  font: normal 700 1.1rem var(--font-mont);
+}
+
+header.header-area .form-group {
+  background: var(--light);
+  box-shadow: var(--box-shadow);
+}
+
+header.header-area .input-control {
+  border: none;
+  padding: .6rem 1rem;
+  background: transparent;
+  font: normal 300 .9rem var(--font-Rale);
+}
+
+header.header-area button.btn.btn-submit {
+  border: none;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background .5s ease;
+}
+
+header.header-area button.btn.btn-submit:hover {
+  background: var(--primary-color);
+}

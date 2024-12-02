@@ -1,0 +1,23 @@
+
+/*  import css files */
+@import url(./assets/css/_variables.css);
+/*  global css file */
+@import url(./assets/css/_global.css);
+/*  grid css file */
+@import url(./assets/css/_grid.css);
+/*  include header file */
+@import url(./assets/css/_header.css);
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 900 1rem var(--font-Rale);
+  background-color: var(--dark);
+}
+

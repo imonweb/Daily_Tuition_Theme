@@ -5,12 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WordPress Template</title>
   <link rel="stylesheet" href="./vendor/css/all.min.css">
-  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <!--========= Header Area start ==========-->
-  <header>
-    <h1>Hello World!</h1>
+  <header class="header-area">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="link nav-brand text-light">
+          <img src="./assets/images/logo.png" alt="logo" width="100px">
+        </a>
+
+        <!--========= toggle menu ==========-->
+        <button class="toggle-button">
+          <span class="fas fa-humburger"></span>
+        </button>
+
+        <!--========= navigation items ==========-->
+        <div class="collapse" id=""toggle-collapse>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-link"><a href="#" class="link text-light">Home</a></li>
+            <li class="nav-link"><a href="#" class="link text-light">People</a></li>
+            <li class="nav-link"><a href="#" class="link text-light">Design</a></li>
+            <li class="nav-link"><a href="#" class="link text-light">Travel</a></li>
+            <li class="nav-link"><a href="#" class="link text-light">About Us</a></li>
+          </ul>
+
+        <!--========= Search bar ==========-->
+        <div class="search">
+          <form action="" class="form-group">
+            <input type="search" class="input-control mr-sm-2" placeholder="Search">
+            <button class="btn btn-submit" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        </div>
+      </nav>
+    </div>
   </header>
   <!--========= Header Area end ==========-->
 
