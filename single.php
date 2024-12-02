@@ -12,10 +12,9 @@ if(have_posts()) :
     ?>
 
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-   
 
       <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-
+      
       <div class="post-meta">
         <span class="date">
           Posted on: <?php the_date() ?> at <?php the_time() ?>
@@ -30,8 +29,8 @@ if(have_posts()) :
 
     </article>
 
-    <?php //the_content(); ?>
-    <?php the_excerpt(); ?>
+    <?php the_content(); ?>
+    <?php //the_excerpt(); ?>
 
     <?php
   endwhile;
@@ -41,15 +40,9 @@ endif;
 </section>
 
 <aside class="sidebar">
-  <?php // get_sidebar(); ?>
-  <?php dynamic_sidebar('new_sidebar'); ?>
+  <?php get_sidebar(); ?>
 </aside>
 
-<div class="pagination">
-  <?php // posts_nav_link(); ?>
-  <?php // next_posts_link(); ?>
-  <?php // previous_posts_link(); ?>
-  <?php the_posts_pagination(); ?>
-</div>
+
  
 <?php get_footer(); ?>
