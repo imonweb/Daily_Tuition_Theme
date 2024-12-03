@@ -65,3 +65,42 @@ header.header-area button.btn.btn-submit {
 header.header-area button.btn.btn-submit:hover {
   background: var(--primary-color);
 }
+
+/*  Responsive toggle menu */
+@media(max0width:992px){
+  header.header-area .toggle-button {
+    display: block !important;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    height: 40px;
+  }
+
+  header.header-area .nav .collapse,
+  header.header-area .nav .navbar-nav {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+  header.header-area .form-group {
+    display: inline-block;
+    margin: 2% 0;
+  }
+
+  header.header-area .nav-link {
+    padding: 10px 0 !important;
+  }
+
+  .header.header-area {
+    height: 60px;
+    background: var(--dark);
+    transition: height .5s ease;
+    overflow-y: hidden;
+  }
+}
+
+.nav-collapse {
+  height: 24rem !important;
+}
