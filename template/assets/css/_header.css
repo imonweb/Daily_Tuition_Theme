@@ -43,26 +43,30 @@ header.header-area .nav .toggle-button:hover {
   font: normal 700 1.1rem var(--font-mont);
 }
 
-header.header-area .form-group {
+header.header-area .form-group,
+aside.sidebar .search-area .form-group {
   background: var(--light);
   box-shadow: var(--box-shadow);
 }
 
-header.header-area .input-control {
+header.header-area .input-control,
+aside.sidebar .search-area .input-control {
   border: none;
   padding: .6rem 1rem;
   background: transparent;
   font: normal 300 .9rem var(--font-Rale);
 }
 
-header.header-area button.btn.btn-submit {
+header.header-area button.btn.btn-submit,
+aside.sidebar .search-area button.btn.btn-submit {
   border: none;
   padding: 0.8rem 1rem;
   cursor: pointer;
   transition: background .5s ease;
 }
 
-header.header-area button.btn.btn-submit:hover {
+header.header-area button.btn.btn-submit:hover,
+aside.sidebar .search-area button.btn.btn-submit:hover {
   background: var(--primary-color);
 }
 
