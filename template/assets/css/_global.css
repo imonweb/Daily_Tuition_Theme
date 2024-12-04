@@ -44,7 +44,7 @@ a {
 }
 
 .text-lg {
-  font: normal 700 2rem/1.8rem var(--font-Rale);
+  font: normal bold 1.8rem/1.6rem var(--font-mont);
 }
 
 .flex {
