@@ -7,6 +7,7 @@
 @import url(./assets/css/_grid.css);
 /*  include header file */
 @import url(./assets/css/_header.css);
+@import url(./assets/css/_media.css);
 
 
 html, body {
@@ -132,11 +133,13 @@ aside.sidebar .popular-tags {
   padding: 4rem 0;
 }
 
-aside.sidebar .popular-tags .tags a {
+aside.sidebar .popular-tags .tags a,
+footer.footer-area .popular-tags .tags a {
   margin: 1.3rem 0;
 }
 
-aside.sidebar .popular-tags .tags a span {
+aside.sidebar .popular-tags .tags a span,
+footer.footer-area .popular-tags .tags a span {
   padding: 1rem 2rem;
   background: var(--light);
   border-radius: 50px;
@@ -145,7 +148,8 @@ aside.sidebar .popular-tags .tags a span {
   transition: background .7s ease;
 }
 
-aside.sidebar .popular-tags .tags a:hover span {
+aside.sidebar .popular-tags .tags a:hover span,
+footer.footer-area .popular-tags .tags a:hover span {
   background-color: var(--primary-color);
   color: var(--light);
 }
@@ -167,4 +171,48 @@ aside.sidebar .popular-tags .tags a:hover span {
 .main-area .pagination a:hover span {
   background: var(--primary-color);
   color: var(--light);
+}
+
+/*  footer area */
+footer.footer-area {
+  background: var(--dark);
+}
+
+footer.footer-area > .row {
+  padding: 5% 0;
+}
+
+footer.footer-area p.para,
+footer.footer-area .social-media,
+footer.footer-area .recent-post,
+footer.footer-area .popular-tags {
+  padding-left: 1.5rem;
+  padding-top: .9rem;
+}
+
+footer.footer-area .social-media a {
+  padding-right: 1rem;
+}
+
+footer.footer-area .recent-post .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
+footer.footer-area .recent-post .post {
+  padding-top: 0.9rem;
+}
+
+footer.footer-area .recent-post img {
+  padding: 2px;
+}
+
+footer.footer-area .popular-tags .tags a span {
+  padding: 0.8rem 1rem;
+}
+
+footer.footer-area .popular-tags .tags a {
+  margin-left: 0rem;
+  margin-top: 2rem;
 }
