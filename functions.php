@@ -1,4 +1,7 @@
 <?php 
+
+// add customizer.php file
+require_once('templates/helpers/customizer.php');
 function daily_tuition_script_enqueue() {
 
   wp_enqueue_style('fontawesome', get_template_directory_uri() . '/vendor/css/all.min.css');

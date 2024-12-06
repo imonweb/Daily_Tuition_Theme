@@ -54,10 +54,14 @@
 
         <!--========= Search bar ==========-->
         <div class="search">
-          <form action="" class="form-group">
+          <?php 
+            // get the searchform.php template file using get_search_form() template tag
+            get_search_form(); 
+          ?>
+          <!-- <form action="" class="form-group">
             <input type="search" class="input-control mr-sm-2" placeholder="Search">
             <button class="btn btn-submit" type="submit"><i class="fas fa-search"></i></button>
-          </form>
+          </form> -->
         </div>
 
         </div>

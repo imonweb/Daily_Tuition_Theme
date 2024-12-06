@@ -5,11 +5,20 @@
         <section class="banner-area">
           <div class="container-fluid">
             <div class="banner">
-              <img src="./assets/images/banner3.jpg" alt="banner area" class="fluid">
+              <!-- <img src="./assets/images/banner3.jpg" alt="banner area" class="fluid"> -->
+               <?php if(get_theme_mod('header_image')) : ?>
+                <img src="<?php echo esc_url(get_theme_mod('header_image')); ?>" alt="banner area" class="fluid">
+               <?php endif; ?>
             </div>
             <div class="banner-title text-center">
-              <h1 class="text-lg text-light">Simplicity</h1>
-              <span class="description text-sm text-light">The Power of Word Press</span>
+              <!-- <h1 class="text-lg text-light">Simplicity</h1> -->
+              <?php if(get_theme_mod('header_text_field')) : ?>
+                <h1 class="text-lg text-light"><?php echo get_theme_mod('header_text_field'); ?> </h1>
+              <?php endif; ?>
+              <!-- <span class="description text-sm text-light">The Power of Word Press</span> -->
+              <?php if(get_theme_mod('header_desc_field')) : ?>
+                <span class="description text-sm text-light"><?php echo get_theme_mod('header_desc_field'); ?> </span>
+              <?php endif; ?>
             </div>
           </div>
         </section>
@@ -19,13 +28,10 @@
      <section class="categories">
       <div class="container">
         <div class="flex flex-row flex-wrap">
-          <a href="#" class="link"><span>All</span></a>
-          <a href="#" class="link"><span>Commercial</span></a>
-          <a href="#" class="link"><span>Natural</span></a>
-          <a href="#" class="link"><span>People</span></a>
-          <a href="#" class="link"><span>Photography</span></a>
-          <a href="#" class="link"><span>Travel</span></a>
-          <a href="#" class="link"><span>Uncategorized</span></a>
+          <?php 
+            // get_template_part() template tag
+            get_template_part('templates/temp/categories', 'content');
+          ?>
         </div>
       </div>
      </section>
@@ -39,170 +45,12 @@
           <div class="col-8-lg col-12-md">
              <div class="grid">
 
-              <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/house3.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 4, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
+              <?php 
+                // load template post-content.php in index.php 
+                get_template_part('templates/temp/post', 'content');
+              ?>
 
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">People</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">Travel</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/natureboy.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 8, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
-
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">Design</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">Photography</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              
-              <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/house2.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 8, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
-
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">Nature</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">Memory</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-               <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/sealions.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 8, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
-
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">Animals</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">Travel</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-
-              <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/girl.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 8, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
-
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">Nature</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">People</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <div class="article">
-                <article class="blog-post">
-                  <div class="post-thumbnail">
-                    <img src="./assets/images/house2.jpg" alt="" class="fluid">
-                  </div>
-                  <div class="post-info">
-                    <div class="post-author">
-                      <a href="#"><span class="text-sm text-gray">by Admin December 8, 2024</span></a>
-                    </div>
-                    <div class="post-title">
-                      <a href="#"><span class="text-lg text-dark">Trip that you'll never ever forget</span></a>
-                    </div>
-                    <div class="post-content">
-                      <p class="para">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                      </p>
-                    </div>
-
-                    <hr>
-                    <div class="post-cat">
-                      <a href="#"><span class="text-sm uppercase text-gray">Nature</span></a>
-                      <a href="#"><span class="text-sm uppercase text-gray">Memory</span></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-             </div>
+             </div> <!--========= grid ==========-->
 
              <!--========= Pagination area ==========-->
              <div class="col-12-lg text-center">

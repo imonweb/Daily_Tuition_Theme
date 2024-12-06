@@ -19,7 +19,7 @@ html, body {
 
 body {
   font: normal 900 1rem var(--font-Rale);
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
 }
 
 /*  custom logo */
