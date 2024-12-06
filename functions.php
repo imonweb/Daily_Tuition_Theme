@@ -79,4 +79,8 @@ function daily_title_setup() {
 
 add_action('after_setup_theme', 'daily_title_setup');
 
+function fn_custom_excerpt_length($length) {
+  return 15;
+}
 
+add_filter('excerpt_length','fn_custom_excerpt_length');
