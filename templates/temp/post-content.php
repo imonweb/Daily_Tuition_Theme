@@ -50,10 +50,12 @@ $arr_posts = new WP_Query( $args );
   </article>
 </div>
 
+
+
 <?php endwhile; ?>
 <?php else : ?>
 <?php echo wpautop('Sorry, No posts were found'); ?>
-<?php  wp_reset_postdata(); ?>
+<?php //wp_reset_postdata(); ?>
 <?php endif; ?>
  
 <!-- <div class="article">

@@ -223,3 +223,16 @@ footer.footer-area .popular-tags .tags a {
   margin-left: 0rem;
   margin-top: 2rem;
 }
+
+/*  page template */
+.post-area .single-post .post-title {
+  padding: 2rem 0px;
+}
+
+.post-area article.single-post .post-thumbnail {
+  width: 60%;
+}
+
+header.header-area .nav-color {
+  background: var(--dark);
+}
