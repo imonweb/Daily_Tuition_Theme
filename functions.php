@@ -8,6 +8,7 @@ function daily_tuition_script_enqueue() {
 
   wp_enqueue_style('customstyle', get_template_directory_uri() . '/main.css', array(), '1.0.0', 'all' );
   
+  wp_enqueue_script('jquery', get_template_directory_uri() . '/vendor/js/jquery.js', array(), '3.7.1', true );
   wp_enqueue_script('customjs', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 
 }

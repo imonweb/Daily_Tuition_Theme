@@ -77,76 +77,8 @@
           
           </div>
           <div class="col-4-lg col-12-md">
-             
-           <aside class="sidebar">
-             <!--========= latest post section start ==========-->
-            <section class="latest-post">
-              <a href="#" class="text-md text-dark">Latest Post</a>
-              <div class="flex flex-column">
-                <article class="new-post">
-                  <div class="row">
-                    <!--========= two columns ==========-->
-                    <div class="col-4-lg post-image">
-                      <img src="./assets/images/natureboy.jpg" alt="latest post" class="fluid">
-                    </div>
-                    <div class="col-8-lg post-title">
-                      <div class="cat">
-                        <a href="#" class="text-sm text-gray category">People</a>
-                        <a href="#" class="text-sm text-gray category">Travel</a>
-                      </div>
-                      <a href="#" class="text-md text-dark">Trip that you'll never ever forget</a>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="new-post">
-                  <div class="row">
-                    <!--========= two columns ==========-->
-                    <div class="col-4-lg post-image">
-                      <img src="./assets/images/girl.jpg" alt="latest post" class="fluid">
-                    </div>
-                    <div class="col-8-lg post-title">
-                      <div class="cat">
-                        <a href="#" class="text-sm text-gray category">People</a>
-                        <a href="#" class="text-sm text-gray category">Travel</a>
-                      </div>
-                      <a href="#" class="text-md text-dark">Trip that you'll never ever forget</a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </section>
-            <!--========= latest post section end ==========-->
-
-            <!--========= Search area start ==========-->
-            <section class="search-area">
-              <div class="search">
-                <h3 class="text-md text-dark">Search</h3>
-                 <form action="" class="form-group">
-                  <input type="search" class="input-control mr-sm-2" placeholder="Search">
-                  <button class="btn btn-submit" type="submit"><i class="fas fa-search"></i></button>
-                 </form>
-              </div>
-            </section>
-            <!--========= Search area end ==========-->
-
-            <!--========= popular tags start ==========-->
-            <section class="popular-tags">
-              <h4 class="text-md">Popular Tags</h4>
-
-              <div class="tags flex flex-row flex-wrap">
-                <a href="#"><span>camera</span></a>
-                <a href="#"><span>bike</span></a>
-                <a href="#"><span>craft</span></a>
-                <a href="#"><span>photography</span></a>
-                <a href="#"><span>article</span></a>
-                <a href="#"><span>events</span></a>
-                <a href="#"><span>driving</span></a>
-                <a href="#"><span>wordpress</span></a>
-              </div>
-            </section>
-            <!--========= popular tags end ==========-->
-           </aside>
+          <!--========= sidebar ==========-->
+           <?php get_sidebar(); ?>
           </div>
         </div>
       </div>
